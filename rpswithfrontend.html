@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="rps.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<body>
+<div id="heading">
+    <h1>Welcome to Rock, Paper, Scissors!</h1>
+    <!-- <p><em>First to five wins!</em></p> -->
+    <h2 id="msg"></h2>
+    <h3 id="msg2"></h3>
+    <p id="scoreboard"></p>
+    <p id="rounds"></p>
+</div>
+<div id="button_container">
+    <div id="rock" class="buttons">
+        <input type="button" value="Rock" id="rock">
+    </div>
+    <div id="paper" class="buttons">
+        <input type="button" value="Paper" id="paper">
+    </div>
+    <div id="scissors" class="buttons">
+        <input type="button" value="Scissors" id="scissors">
+    </div>
+    <div id="scoreboard"></div>
+    <div id="winner"></div>
+    <!--<div id="reloadButton"></div> -->
+
+
+</div>
+
+<script src="rpsjs.js"></script>
+
+</body>
+</html>
+
+<!--
+var result = "";
+var winner = 0;
+var wins = 0;
+var losses = 0;
+var ties = 0;
+var rps = ["rock", "paper", "scissors"];
+var computerSelection = computerPlay(rps);
+var playerSelection = ""; 
+
+const rock = document.querySelector('#rock')
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
+
+function computerPlay(rps) {
+    return rps[Math.floor(Math.random()*rps.length)];
+}
+
+rock.addEventListener('click', () => {
+    playerSelection = "rock";
+});
+paper.addEventListener("click", () => {
+    playerSelection = "paper";
+});
+scissors.addEventListener("click", () => {
+    playerSelection = "scissors";
+});
+
+console.log(playerSelection);
+
+function playRound(computerSelection, playerSelection) {
+    //computerSelection = computerPlay(rps);
+    //playerSelection = click;
+    //playerSelection = playerSelection.toLowerCase();
+    switch (playerSelection) {
+        case "rock":
+            console.log("You chose rock. The computer chose " + computerSelection + ".");
+        switch (computerSelection) {
+            case "rock":
+                result = ++ties;
+                console.log("You tie this round.");
+                return result;
+                break;
+            case "paper":
+                result = ++losses;
+                console.log("Computer wins! Paper covers rock.");
+                return result;
+                break;
+            case "scissors":
+                result = ++wins;
+                console.log("You win! Rock crushes scissors.");
+                return result;
+                break;
+        }
+        break;
+            case "paper":
+                console.log("You chose paper. The computer chose " + computerSelection + ".");
+                switch (computerSelection) {
+                case "rock":
+                    result = ++wins;
+                    console.log("You win! Rock crushes scissors.");
+                    return result;
+                    break;
+                case "paper":
+                    result = ++ties;
+                    console.log("You tie this round.");
+                    return result;
+                    break;
+                case "scissors":
+                    result = ++losses;
+                    console.log("Computer wins! Paper covers rock.");
+                    return result;
+                    break;
+            }
+        break;
+            case "scissors":
+                console.log("You chose scissors. The computer chose " + computerSelection + ".");
+                switch (computerSelection) {
+                    case "rock":
+                    result = ++losses;
+                    console.log("Computer wins! Paper covers rock.");
+                    return result;
+                    break;
+                case "paper":
+                    result = ++wins;
+                    console.log("You win! Rock crushes scissors.");
+                    return result;
+                    break;
+                case "scissors":
+                    result = ++ties;
+                    console.log("You tie this round.");
+                    return result;
+                    break;
+            }
+        break;
+                default:
+                    result = "Computer wins! Please enter a valid option."
+                    return result;
+                    break; 
+                }
+            }
+
+playRound(computerSelection, playerSelection);
+console.log(computerSelection + playerSelection);
+
+
+*/
+/*           
+function game(winner) {
+    var i;
+    for (i = 0; i < 5; i++) {
+
+        playRound(computerSelection, playerSelection);
+        console.log("You have " + wins + " wins, " + losses + " losses, and " + ties + " ties.");
+        }
+        if (wins > losses) {
+            console.log("You win the game! Congratulations!");
+            winner = "Player";
+        }
+        else if (losses > wins) {
+            console.log("The computer wins the game! Better luck next time. ;)");
+            winner = "Computer";
+        }
+        else {
+            console.log("You tie with the computer. Try again.")
+            winner = "Tie";
+        }
+}
+console.log(game(winner));
+*/
+
+-->
+
+

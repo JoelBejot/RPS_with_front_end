@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="rps.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+    <header>
+        <h1>RO SHAM BO</h1>
+    </header>
+    <body>
+        <img src="yes.png" alt="weird face" height="75%" width="75%">
+        <p>Are you ready to play Rock, Paper, Scissors?</p>
+        <input type="button" value="Yes!" id="readyToPlay">
+    </body>
+
+    <script>
+        const readyToPlay = document.querySelector('#readyToPlay');
+        readyToPlay.addEventListener('click', () => {
+            window.location = "rpswithfrontend.html";
+        });
+    </script>
+
+</html>
